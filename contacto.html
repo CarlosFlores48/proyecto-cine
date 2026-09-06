@@ -17,6 +17,7 @@
         </nav>
 
     </header>
+    <hr>
     
     <main>
 
@@ -46,9 +47,14 @@
         </section>
 
         <section>
+
             <h2>Envíanos un mensaje</h2>
 
             <form >
+
+                <fieldset>
+
+                    <legend>DATOS DE CONTACTO</legend><br>
 
                 <label for="nombre">Nombre:</label>
                 <input
@@ -68,6 +74,23 @@
 
                 <br><br>
 
+                <label for="celular">Teléfono: </label>
+                <input
+                    type="tel"
+                    id="celular"
+                    name="celular"
+                    pattern="[0-9]{9}"
+                    maxlength="9"
+                    required>
+
+                </fieldset>
+
+                <br><br>
+
+                <fieldset>
+
+                    <legend>MENSAJE</legend><br>
+
                 <label for="asunto">Asunto:</label>
                 <input    
                     type="text"
@@ -83,6 +106,8 @@
                     rows="5"
                     cols="30">
                 </textarea>
+
+                </fieldset>
 
                 <br><br>
 
