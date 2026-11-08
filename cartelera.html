@@ -3,107 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera - Cine Estelar</title>
+    <title>Cartelera — Cine Estelar</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
         <h1>🎬 CARTELERA</h1>
+        <p>Funciones y horarios disponibles</p>
         <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="cartelera.html">Cartelera</a> |
-            <a href="precios.html">Precios</a> |
+            <a href="index.html">Inicio</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="precios.html">Precios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <section>
-            <h2>Películas en Cartelera</h2>
-            <p>Consulta las películas que se proyectan actualmente en nuestras salas:</p>
+        <!-- BOTONES DE FILTRO -->
+        <section class="filtros">
+            <h2>Filtrar por género:</h2>
+            <div class="botones-filtro">
+                <button class="filtro-activo" data-genero="todas">Todas</button>
+                <button data-genero="accion">Acción</button>
+                <button data-genero="terror">Terror</button>
+                <button data-genero="animacion">Animación</button>
+                <button data-genero="aventura">Aventura</button>
+                <button data-genero="fantasia">Fantasía</button>
+            </div>
+        </section>
 
-            <article>
-                <h3>Insidious</h3>
-                <img src="cine/insidious.jpg" alt="imagen de insidious" width="200">
-                <p><strong>Género:</strong> Terror</p>
-                <p><strong>Duración:</strong> 120 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>15:00 — Sala 1</li>
-                    <li>18:00 — Sala 1</li>
-                    <li>21:00 — Sala 1</li>
-                </ul>
+        <!-- LISTA COMPLETA DE LAS 6 PELÍCULAS -->
+        <section class="lista-peliculas">
+            <h2>🎞️ Películas en Exhibición</h2>
+
+            <article class="pelicula" data-genero="terror">
+                <img src="cine/insidious.jpg" alt="Insidious" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Insidious: La Puerta Roja</h3>
+                    <p><strong>Género:</strong> Terror | <strong>Duración:</strong> 107 min</p>
+                    <p><strong>Salas:</strong> Sala 1 — Sala 3</p>
+                    <p><strong>Horarios:</strong> 16:00 — 18:30 — 21:00</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Hechizo</h3>
-                <img src="cine/hechizo.jpg" alt="imagen de hechizo" width="200">
-                <p><strong>Género:</strong> Animación</p>
-                <p><strong>Duración:</strong> 100 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>14:00 — Sala 2</li>
-                    <li>17:00 — Sala 2</li>
-                    <li>20:00 — Sala 2</li>
-                </ul>
+            <article class="pelicula" data-genero="animacion">
+                <img src="cine/toy store.jpg" alt="Toy Story 5" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Toy Story 5</h3>
+                    <p><strong>Género:</strong> Animación / Aventura | <strong>Duración:</strong> 95 min</p>
+                    <p><strong>Salas:</strong> Sala 2 — Sala 4</p>
+                    <p><strong>Horarios:</strong> 14:30 — 17:00 — 19:30</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Kraven</h3>
-                <img src="cine/kraven.jpg" alt="imagen de kraven" width="200">
-                <p><strong>Género:</strong> Acción</p>
-                <p><strong>Duración:</strong> 130 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>16:00 — Sala 3</li>
-                    <li>19:00 — Sala 3</li>
-                    <li>22:00 — Sala 3</li>
-                </ul>
+            <article class="pelicula" data-genero="accion">
+                <img src="cine/spiderman.jpg" alt="Spider-Man" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Spider-Man: Cruzando el Multiverso</h3>
+                    <p><strong>Género:</strong> Acción / Animación | <strong>Duración:</strong> 140 min</p>
+                    <p><strong>Salas:</strong> Sala 1 — Sala 5</p>
+                    <p><strong>Horarios:</strong> 15:00 — 19:00 — 22:00</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Los Muertimer</h3>
-                <img src="cine/los muertimer.jpg" alt="imagen de los muertimer" width="200">
-                <p><strong>Género:</strong> Comedia</p>
-                <p><strong>Duración:</strong> 150 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>17:00 — Sala 4</li>
-                    <li>18:00 — Sala 4</li>
-                    <li>20:00 — Sala 4</li>
-                </ul>
+            <article class="pelicula" data-genero="aventura">
+                <img src="cine/kraven.jpg" alt="Kraven" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Kraven el Cazador</h3>
+                    <p><strong>Género:</strong> Acción / Aventura | <strong>Duración:</strong> 127 min</p>
+                    <p><strong>Salas:</strong> Sala 3 — Sala 4</p>
+                    <p><strong>Horarios:</strong> 17:30 — 20:30 — 23:00</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Spider-Man</h3>
-                <img src="cine/spiderman.jpg" alt="imagen de spiderman" width="200">
-                <p><strong>Género:</strong> Acción</p>
-                <p><strong>Duración:</strong> 130 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>19:00 — Sala 5</li>
-                    <li>20:15 — Sala 5</li>
-                    <li>21:00 — Sala 5</li>
-                </ul>
+            <article class="pelicula" data-genero="terror">
+                <img src="cine/los muertimer.jpg" alt="Los Muertimer" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Los Muertimer</h3>
+                    <p><strong>Género:</strong> Terror / Suspenso | <strong>Duración:</strong> 112 min</p>
+                    <p><strong>Salas:</strong> Sala 2 — Sala 5</p>
+                    <p><strong>Horarios:</strong> 15:30 — 18:00 — 21:30</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Toy Story</h3>
-                <img src="cine/toy store.jpg" alt="imagen de stoy store" width="200">
-                <p><strong>Género:</strong> Animación</p>
-                <p><strong>Duración:</strong> 130 minutos</p>
-                <h4>Horarios:</h4>
-                <ul>
-                    <li>19:00 — Sala 2</li>
-                    <li>20:15 — Sala 2</li>
-                    <li>21:00 — Sala 2</li>
-                </ul>
+            <article class="pelicula" data-genero="fantasia">
+                <img src="cine/hechizo.jpg" alt="Hechizo" loading="lazy">
+                <div class="info-pelicula">
+                    <h3>Hechizo</h3>
+                    <p><strong>Género:</strong> Fantasía / Drama | <strong>Duración:</strong> 105 min</p>
+                    <p><strong>Salas:</strong> Sala 1 — Sala 4</p>
+                    <p><strong>Horarios:</strong> 14:00 — 18:40 — 22:20</p>
+                </div>
             </article>
         </section>
     </main>
-    <hr>
+
     <footer>
-        <p>&copy; 2026 Cine Estelar | Proyecto de Programación Web</p>
+        <div class="contenido-pie">
+            <div><h4>📍 Ubicación</h4><p>Av. Principal 123 — Lima, Perú</p></div>
+            <div><h4>🕐 Horarios</h4><p>Lun-Dom: 14:00 — 23:00</p></div>
+            <div><h4>📞 Contacto</h4><p>987 654 321 | contacto@cineestelar.pe</p></div>
+        </div>
+        <p class="derechos">&copy; 2026 Cine Estelar — Todos los derechos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

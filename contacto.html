@@ -3,82 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Cine Estelar</title>
+    <title>Contacto — Cine Estelar</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
         <h1>📩 CONTACTO</h1>
+        <p>Estamos aquí para ayudarte</p>
         <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="cartelera.html">Cartelera</a> |
-            <a href="precios.html">Precios</a> |
+            <a href="index.html">Inicio</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="precios.html">Precios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <section>
-            <h2>Información del Cine Estelar</h2>
-            <article>
-                <h3>📍 Dirección</h3>
-                <p>Av. Principal 123, Lima, Perú</p>
-            </article>
-            <article>
-                <h3>📞 Teléfono</h3>
-                <p>01 254 2587</p>
-            </article>
-            <article>
-                <h3>✉️ Correo Electrónico</h3>
-                <p>contacto@cine.com</p>
-            </article>
-            <article>
-                <h3>🕐 Horario de Atención</h3>
-                <p>Lunes a domingo: 10:00 a. m. — 11:00 p. m.</p>
-            </article>
+        <section class="info-contacto">
+            <h2>📍 Nuestra Ubicación</h2>
+            <p><strong>Dirección:</strong> Av. Principal 123 — Centro Comercial Estelar, Lima, Perú</p>
+            <p><strong>Teléfono:</strong> +51 987 654 321</p>
+            <p><strong>Correo:</strong> contacto@cineestelar.pe</p>
+            <p><strong>Horario de atención telefónica:</strong> 10:00 — 22:00 todos los días</p>
         </section>
 
-        <section>
-            <h2>Envíanos un Mensaje</h2>
-            <form action="#" method="post">
+        <section class="formulario-seccion">
+            <h2>✉️ Envíanos un Mensaje</h2>
+            <form>
                 <fieldset>
-                    <legend>DATOS DE CONTACTO</legend>
-                    <p>
-                        <label for="nombre">Nombre completo:</label><br>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </p>
-                    <p>
-                        <label for="correo">Correo electrónico:</label><br>
-                        <input type="email" id="correo" name="correo" required>
-                    </p>
-                    <p>
-                        <label for="celular">Teléfono celular (9 dígitos):</label><br>
-                        <input type="tel" id="celular" name="celular" pattern="[0-9]{9}" maxlength="9" required>
-                    </p>
-                </fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-                <fieldset>
-                    <legend>MENSAJE</legend>
-                    <p>
-                        <label for="asunto">Asunto:</label><br>
-                        <input type="text" id="asunto" name="asunto" required>
-                    </p>
-                    <p>
-                        <label for="mensaje">Tu mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
-                    </p>
-                </fieldset>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
 
-                <p>
-                    <button type="submit">✅ Enviar Mensaje</button>
-                    <button type="reset">🔄 Borrar</button>
-                </p>
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="987 654 321">
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta general</option>
+                        <option value="reserva">Reserva de entradas</option>
+                        <option value="cumpleanos">Celebración de cumpleaños</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="reclamo">Reclamo</option>
+                    </select>
+
+                    <label for="mensaje">Tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+
+                    <button type="submit">📤 Enviar mensaje</button>
+                    <button type="reset">🔄 Limpiar formulario</button>
+                </fieldset>
             </form>
         </section>
     </main>
-    <hr>
+
     <footer>
-        <p>&copy; 2026 Cine Estelar | Proyecto de Programación Web</p>
-    </footer>
-</body>
-</html>
+        <div class="contenido-pie">
+            <div><h4>📍 Ubicación</h4><p>Av. Principal 123 — Lima, Perú</p></div>
+            <div><h4>🕐 Horarios</h4><p>Lun-Dom: 14:00 — 23:00</p></div>
+           

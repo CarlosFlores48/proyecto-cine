@@ -3,59 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Cine Estelar</title>
+    <title>Inicio — Cine Estelar</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
-        <h1>🎬 CINE ESTELAR</h1>
-        <p><em>Vive la mejor experiencia cinematográfica</em></p>
+        <h1> CINE ESTELAR </h1>
+        <p>Tu mejor opción de entretenimiento — Donde el cine cobra vida</p>
         <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="cartelera.html">Cartelera</a> |
-            <a href="precios.html">Precios</a> |
+            <a href="index.html">Inicio</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="precios.html">Precios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <hr>
+
     <main>
-        <section>
-            <h2>Bienvenidos a Cine Estelar</h2>
-            <p>Disfruta de las mejores películas, estrenos y experiencias cinematográficas en un solo lugar. Contamos con salas cómodas, imagen digital y sonido envolvente para tu disfrute.</p>
+        <section class="bienvenida">
+            <h2>🎬 Bienvenidos</h2>
+            <p>Disfruta de las mejores películas en pantalla grande. Aquí encontrarás toda la información de nuestra cartelera, horarios, promociones y mucho más.</p>
         </section>
 
-        <section>
-            <h2>✨ Películas Destacadas</h2>
-            <article>
-                <h3>Insidious</h3>
-                <img src="cine/insidious.jpg" alt="imagen de insidious" width="180">
-                <p>Podrás volver a dormir después de un encuentro espantoso.</p>
+        <section class="destacadas">
+            <h2>⭐ Películas Destacadas</h2>
+            <article class="pelicula-destacada" data-genero="terror">
+                <img src="cine/insidious.jpg" alt="Insidious — La Puerta Roja" loading="lazy">
+                <h3>Insidious: La Puerta Roja</h3>
+                <p><strong>Género:</strong> Terror | <strong>Duración:</strong> 107 min</p>
+                <p>La familia Lambert enfrenta su último y más aterrador desafío...</p>
             </article>
-            <article>
-                <h3>Hechizo</h3>
-                <img src="cine/hechizo.jpg" alt="imagen de hechizo" width="180">
-                <p>Disfruta de las aventuras de la Luna.</p>
+
+            <article class="pelicula-destacada" data-genero="animacion">
+                <img src="cine/toy store.jpg" alt="Toy Story 5" loading="lazy">
+                <h3>Toy Story 5</h3>
+                <p><strong>Género:</strong> Animación / Aventura | <strong>Duración:</strong> 95 min</p>
+                <p>Woody, Buzz y la pandilla regresan con una nueva aventura emocionante...</p>
             </article>
-            <article>
-                <h3>Kraven</h3>
-                <img src="cine/kraven.jpg" alt="imagen de kraven" width="180">
-                <p>Los villanos no nacen, se hacen. Conoce la historia del cazador Kraven.</p>
+
+            <article class="pelicula-destacada" data-genero="accion">
+                <img src="cine/spiderman.jpg" alt="Spider-Man" loading="lazy">
+                <h3>Spider-Man: Cruzando el Multiverso</h3>
+                <p><strong>Género:</strong> Acción / Animación | <strong>Duración:</strong> 140 min</p>
+                <p>Miles Morales viaja por el Multiverso y conoce a un equipo de Spiders...</p>
             </article>
         </section>
 
-        <section>
-            <h2>🎟️ Próximos Estrenos</h2>
-            <ul>
-                <li>🎬 Nueva aventura animada — Próximamente noviembre</li>
-                <li>🎬 Estreno de acción — Diciembre 2026</li>
-                <li>🎬 Película familiar — Festividades de fin de año</li>
-            </ul>
-            <p><a href="cartelera.html">Ver cartelera completa →</a></p>
+        <section class="promociones">
+            <h2>🎟️ Promociones Especiales</h2>
+            <div class="tarjeta-promocion">
+                <h3>🔥 2x1 los Martes</h3>
+                <p>Compra una entrada y lleva la segunda gratis</p>
+            </div>
+            <div class="tarjeta-promocion">
+                <h3>🎓 Descuento Estudiantes -20%</h3>
+                <p>Presenta tu carné y obtén descuento especial</p>
+            </div>
+            <div class="tarjeta-promocion">
+                <h3>👨‍👩‍👧‍👦 Combo Familiar</h3>
+                <p>4 entradas + 2 palomitas + 4 refrescos a precio especial</p>
+            </div>
         </section>
     </main>
-    <hr>
+
     <footer>
-        <p>&copy; 2026 Cine Estelar | Proyecto de Programación Web</p>
+        <div class="contenido-pie">
+            <div>
+                <h4>📍 Ubicación</h4>
+                <p>Av. Principal 123 — Lima, Perú</p>
+            </div>
+            <div>
+                <h4>🕐 Horarios</h4>
+                <p>Lunes a Domingo: 14:00 — 23:00</p>
+            </div>
+            <div>
+                <h4>📞 Contacto</h4>
+                <p>Teléfono: 987 654 321</p>
+                <p>Email: contacto@cineestelar.pe</p>
+            </div>
+        </div>
+        <p class="derechos">&copy; 2026 Cine Estelar — Todos los derechos reservados | Proyecto Taller de Programación Web</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

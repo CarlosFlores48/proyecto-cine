@@ -3,99 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios - Cine Estelar</title>
+    <title>Precios y Promociones — Cine Estelar</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
         <h1>💰 PRECIOS Y PROMOCIONES</h1>
+        <p>Entradas, confitería y ofertas especiales</p>
         <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="cartelera.html">Cartelera</a> |
-            <a href="precios.html">Precios</a> |
+            <a href="index.html">Inicio</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="precios.html">Precios</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <hr>
+
     <main>
         <section>
-            <h2>Entradas</h2>
-            <table border="1" cellpadding="8">
-                <tr>
-                    <th>Tipo de Entrada</th>
-                    <th>Precio</th>
-                    <th>Observaciones</th>
-                </tr>
-                <tr>
-                    <td>Adulto</td>
-                    <td>S/ 15.00</td>
-                    <td>Todos los días</td>
-                </tr>
-                <tr>
-                    <td>Niño (hasta 12 años)</td>
-                    <td>S/ 10.00</td>
-                    <td>Presentar DNI</td>
-                </tr>
-                <tr>
-                    <td>Estudiante</td>
-                    <td>S/ 12.00</td>
-                    <td>Presentar carné vigente</td>
-                </tr>
-                <tr>
-                    <td>Tercera Edad</td>
-                    <td>S/ 10.00</td>
-                    <td>Mayores de 60 años</td>
-                </tr>
-                <tr>
-                    <td>Día del Espectador</td>
-                    <td>S/ 9.00</td>
-                    <td>Los martes</td>
-                </tr>
-            </table>
+            <h2>🎟️ Valor de Entradas</h2>
+            <div class="tabla-responsive">
+                <table>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Precio Regular</th>
+                        <th>Precio 3D</th>
+                    </tr>
+                    <tr>
+                        <td>Adulto</td>
+                        <td>S/ 15.00</td>
+                        <td>S/ 20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Estudiante (con carné)</td>
+                        <td>S/ 12.00</td>
+                        <td>S/ 17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Niños (hasta 12 años)</td>
+                        <td>S/ 10.00</td>
+                        <td>S/ 14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Adulto Mayor (65+)</td>
+                        <td>S/ 10.00</td>
+                        <td>S/ 14.00</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <section>
             <h2>🍿 Confitería</h2>
-            <table border="1" cellpadding="8">
-                <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>Cancha pequeña</td>
-                    <td>S/ 6.00</td>
-                </tr>
-                <tr>
-                    <td>Cancha grande</td>
-                    <td>S/ 10.00</td>
-                </tr>
-                <tr>
-                    <td>Bebida pequeña</td>
-                    <td>S/ 4.00</td>
-                </tr>
-                <tr>
-                    <td>Bebida grande</td>
-                    <td>S/ 7.00</td>
-                </tr>
-                <tr>
-                    <td>Combo (Cancha + Bebida)</td>
-                    <td>S/ 12.00</td>
-                </tr>
-            </table>
+            <div class="tabla-responsive">
+                <table>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Palomitas Pequeñas</td>
+                        <td>S/ 6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Palomitas Grandes</td>
+                        <td>S/ 12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Refresco</td>
+                        <td>S/ 5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Combo Pareja</td>
+                        <td>S/ 25.00</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
-        <section>
-            <h2>⭐ Promociones Especiales</h2>
-            <ul>
-                <li><strong>Martes de estreno:</strong> Todos los martes precio único S/ 9.00 para todo público</li>
-                <li><strong>Pack Familiar:</strong> 4 entradas + 2 canchas grandes + 4 bebidas = S/ 60.00</li>
-                <li><strong>Estudiantes:</strong> 10% de descuento presentando carné de la UTP</li>
-            </ul>
+        <section class="promociones-lista">
+            <h2>✨ Promociones Vigentes</h2>
+            <article class="promocion-destacada">
+                <h3>🔥 Martes de Ofertas — 2x1 en entradas</h3>
+                <p>Todos los martes compra una entrada y lleva la segunda gratis. Válido para funciones antes de las 20:00.</p>
+            </article>
+            <article class="promocion-destacada">
+                <h3>🎓 Día del Estudiante — 20% descuento</h3>
+                <p>De lunes a viernes presentando tu carné universitario o escolar.</p>
+            </article>
+            <article class="promocion-destacada">
+                <h3>👨‍👩‍👧‍👦 Pack Familiar</h3>
+                <p>4 entradas + 2 palomitas grandes + 4 refrescos = S/ 60.00 (Ahorras S/ 15.00)</p>
+            </article>
         </section>
     </main>
-    <hr>
+
     <footer>
-        <p>&copy; 2026 Cine Estelar | Proyecto de Programación Web</p>
+        <div class="contenido-pie">
+            <div><h4>📍 Ubicación</h4><p>Av. Principal 123 — Lima, Perú</p></div>
+            <div><h4>🕐 Horarios</h4><p>Lun-Dom: 14:00 — 23:00</p></div>
+            <div><h4>📞 Contacto</h4><p>987 654 321 | contacto@cineestelar.pe</p></div>
+        </div>
+        <p class="derechos">&copy; 2026 Cine Estelar — Todos los derechos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
